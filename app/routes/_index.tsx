@@ -33,22 +33,22 @@ export default function Index() {
     {
       name: "Whatsapp",
       icon: IconBrandWhatsapp,
-      to: "",
+      to: "https://api.whatsapp.com/send?phone=56936724002",
     },
     {
       name: "LinkedIn",
       icon: IconBrandLinkedin,
-      to: "",
+      to: "https://www.linkedin.com/in/cristobalnpe/",
     },
     {
       name: "GitHub",
       icon: IconBrandGithub,
-      to: "",
+      to: "https://github.com/CristobalNPE",
     },
     {
       name: "Email",
       icon: IconMail,
-      to: "",
+      to: "mailto:cristobal.npe@gmail.com?subject=Contact%20from%20website",
     },
   ];
 
@@ -70,6 +70,8 @@ export default function Index() {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <a
+                    rel="noreferrer"
+                    target="_blank"
                     href={link.to}
                     className={
                       "border-2 shadow-md bg-secondary text-secondary-foreground hover:bg-secondary/80 flex justify-center items-center rounded-full h-14 w-14 sm:h-16 sm:w-16 hover:scale-110 transition-all"
