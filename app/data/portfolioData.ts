@@ -25,7 +25,7 @@ export const data: PorfolioData[] = [
   },
   {
     title: "PokeMem",
-    shortDescription: "Create your curriculum in minutes",
+    shortDescription: "A simple card memorize game",
     description:
       "CV Creator is your one-stop solution for crafting a polished curriculum vitae (CV) with ease. Input your details and select from a range of professionally designed templates, and watch as your well-formatted CV takes shape in minutes.",
     stack: ["React", "Vite", "JavaScript", "TailwindCSS"],
@@ -36,7 +36,7 @@ export const data: PorfolioData[] = [
   },
   {
     title: "Shopper's Choice",
-    shortDescription: "Create your curriculum in minutes",
+    shortDescription: "The front of a shopping web",
     description:
       "CV Creator is your one-stop solution for crafting a polished curriculum vitae (CV) with ease. Input your details and select from a range of professionally designed templates, and watch as your well-formatted CV takes shape in minutes. CV Creator streamlines the CV creation process, helping you generate a professionally formatted Curriculum effortlessly.",
     stack: ["React", "Vite", "JavaScript", "TailwindCSS"],
