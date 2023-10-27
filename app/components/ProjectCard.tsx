@@ -1,6 +1,5 @@
 import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 import { Badge } from "~/components/ui/badge";
-import { Button } from "~/components/ui/button";
 import { ScrollArea } from "./ui/scroll-area";
 
 type Props = {
@@ -25,12 +24,13 @@ function ProjectCard({
   githubLink,
 }: Props) {
   return (
-    <article className=" w-[20rem] bg-secondary max-h-[40rem] rounded-lg shadow-md hover:shadow-xl  transition-all ">
+    <article className="border-2 w-[21rem] bg-secondary max-h-[40rem] rounded-lg shadow-md hover:shadow-xl  transition-all ">
       <img
         src={mainImg}
         alt={`Screenshot of the project ${title}`}
         className={"rounded-t-lg aspect-video object-cover w-full h-[12rem]"}
       />
+
       <div className="p-3 flex flex-col  h-[28rem]">
         <div className="grow">
           <div className="flex gap-2 items-center">
@@ -58,20 +58,22 @@ function ProjectCard({
         </div>
 
         <div className="flex justify-between ">
-          <Button
-            variant="outline"
-            className="flex items-center gap-2 text-lg "
-            size={"lg"}
+          <a
+            href={githubLink}
+            rel="noreferrer"
+            target="_blank"
+            className="flex items-center gap-2 text-lg bg-background py-2 rounded-lg border-2 hover:bg-primary px-8 transition-colors"
           >
             <IconBrandGithub /> Code
-          </Button>
-          <Button
-            variant="outline"
-            className="flex items-center gap-2 text-lg "
-            size={"lg"}
+          </a>
+          <a
+            href={liveLink}
+            rel="noreferrer"
+            target="_blank"
+            className="flex items-center gap-2 text-lg bg-background py-2 rounded-lg border-2 hover:bg-primary px-8 transition-colors"
           >
             <IconExternalLink /> Live
-          </Button>
+          </a>
         </div>
       </div>
     </article>
