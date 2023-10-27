@@ -1,3 +1,5 @@
+import { CvCreatorL, CvCreatorM, PokeMemL, PokeMemM, ShChoiceL, ShChoiceM } from "./assets";
+
 export type PorfolioData = {
   title: string;
   shortDescription: string;
@@ -16,10 +18,10 @@ export const data: PorfolioData[] = [
     description:
       "CV Creator is your one-stop solution for crafting a polished curriculum vitae (CV) with ease. Input your details and select from a range of professionally designed templates, and watch as your well-formatted CV takes shape in minutes. CV Creator streamlines the CV creation process, helping you generate a professionally formatted Curriculum effortlessly.",
     stack: ["React", "Vite", "TypeScript", "TailwindCSS"],
-    mainImg: "http://unsplash.it/1200/1200",
-    logoImg: "http://unsplash.it/1200/1200",
-    liveLink: "",
-    githubLink: "",
+    mainImg: CvCreatorM,
+    logoImg: CvCreatorL,
+    liveLink: "https://grand-dango-1acc0c.netlify.app/",
+    githubLink: "https://github.com/CristobalNPE/CVGenerator-v2",
   },
   {
     title: "PokeMem",
@@ -27,10 +29,10 @@ export const data: PorfolioData[] = [
     description:
       "CV Creator is your one-stop solution for crafting a polished curriculum vitae (CV) with ease. Input your details and select from a range of professionally designed templates, and watch as your well-formatted CV takes shape in minutes.",
     stack: ["React", "Vite", "JavaScript", "TailwindCSS"],
-    mainImg: "http://unsplash.it/1200/1200",
-    logoImg: "http://unsplash.it/1200/1200",
-    liveLink: "",
-    githubLink: "",
+    mainImg: PokeMemM,
+    logoImg: PokeMemL,
+    liveLink: "https://effulgent-khapse-4691e8.netlify.app/",
+    githubLink: "https://github.com/CristobalNPE/poke-memorize",
   },
   {
     title: "Shopper's Choice",
@@ -38,9 +40,9 @@ export const data: PorfolioData[] = [
     description:
       "CV Creator is your one-stop solution for crafting a polished curriculum vitae (CV) with ease. Input your details and select from a range of professionally designed templates, and watch as your well-formatted CV takes shape in minutes. CV Creator streamlines the CV creation process, helping you generate a professionally formatted Curriculum effortlessly.",
     stack: ["React", "Vite", "JavaScript", "TailwindCSS"],
-    mainImg: "http://unsplash.it/1200/1200",
-    logoImg: "http://unsplash.it/1200/1200",
-    liveLink: "",
-    githubLink: "",
+    mainImg: ShChoiceM,
+    logoImg: ShChoiceL,
+    liveLink: "https://beautiful-paletas-e6ec16.netlify.app/",
+    githubLink: "https://github.com/CristobalNPE/shopping-app",
   },
 ];
