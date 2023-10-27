@@ -10,12 +10,13 @@ import {
   Scripts,
   ScrollRestoration,
   isRouteErrorResponse,
+  useNavigate,
   useRouteError,
 } from "@remix-run/react";
-import { ThemeProvider } from "~/components/theme-provider";
+import { IconHomeShield, IconMoodSadDizzy } from "@tabler/icons-react";
 import { Navbar } from "~/components/Navbar";
-import { Heading } from "./components/typography/Heading";
-import { IconMoodSadDizzy } from "@tabler/icons-react";
+import { ThemeProvider } from "~/components/theme-provider";
+import { Button } from "./components/ui/button";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
@@ -47,30 +48,36 @@ export default function App() {
 }
 export function ErrorBoundary() {
   const error = useRouteError();
+  const navigate = useNavigate();
 
   if (isRouteErrorResponse(error)) {
     return (
       <html>
         <head>
           <title>{error.status} - Oh no!</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <Meta />
           <Links />
         </head>
         <body>
           <ThemeProvider defaultTheme="dark" attribute={"class"} enableSystem>
-            <div className="text-center grid place-content-center h-[100dvh]">
-              <Heading variant="h0" className="font-thin">
+            <div className="text-center grid place-content-center h-[100dvh] p-3">
+              <h1 className="font-thin text-5xl sm:text-7xl">
                 Error{" "}
                 <span className="font-black text-destructive">
                   {error.status}
                 </span>
-              </Heading>
-              <p className="font-mono">{error.data}</p>
+              </h1>
+              <p className="font-mono text-xl sm:text-2xl">{error.data}</p>
 
               <IconMoodSadDizzy
                 className="text-center mt-12 mx-auto"
+                strokeWidth={1}
                 size={200}
               />
+              <Button className="mt-12" size={"lg"} onClick={() => navigate("/")}>
+                <IconHomeShield className="mr-2 h-4 w-4" /> Go back to safety
+              </Button>
             </div>
             <Scripts />
           </ThemeProvider>
