@@ -24,11 +24,11 @@ function ProjectCard({
   githubLink,
 }: Props) {
   return (
-    <article className="border-2 w-[21rem] bg-secondary max-h-[40rem] rounded-lg shadow-md hover:shadow-xl  transition-all ">
+    <article className="hover:bg-foreground/10 border-2 w-[21rem] bg-secondary max-h-[40rem] rounded-lg shadow-md hover:shadow-xl  transition-all ">
       <img
         src={mainImg}
         alt={`Screenshot of the project ${title}`}
-        className={"rounded-t-lg aspect-video object-cover w-full h-[12rem]"}
+        className={"rounded-t-lg aspect-video object-cover w-full h-[12rem] "}
       />
 
       <div className="p-3 flex flex-col  h-[28rem]">
@@ -36,7 +36,7 @@ function ProjectCard({
           <div className="flex gap-2 items-center">
             <img
               src={logoImg}
-              className="rounded-lg h-[4rem] w-[4rem]"
+              className="rounded-lg h-[4rem] w-[4rem] "
               alt={`Logo for the project ${title}`}
             />
             <div>
