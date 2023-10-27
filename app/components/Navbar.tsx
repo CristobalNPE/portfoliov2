@@ -33,7 +33,7 @@ export function Navbar() {
 
   return (
     <>
-      <nav className=" border-2 z-50 flex bg-gradient-to-tr from-secondary via-muted to-secondary sm:hidden items-center rounded-full h-[3rem] fixed w-full bottom-1 px-[2rem] md:px-[5rem] justify-between shadow-md">
+      <nav className=" border-2 border-primary/10 z-50 flex bg-gradient-to-tr from-secondary via-muted to-secondary sm:hidden items-center rounded-full h-[3rem] fixed w-full bottom-1 px-[2rem] md:px-[5rem] justify-between shadow-md">
         {links.map((link) => (
           <NavLink
             key={link.title}
@@ -63,7 +63,7 @@ export function Navbar() {
         </Button>
       </nav>
 
-      <nav className="max-w-6xl mx-auto hidden bg-gradient-to-tr from-secondary via-muted to-secondary sm:flex items-center rounded-full h-[4rem] sticky top-2 px-[2rem] md:px-[5rem] justify-between shadow-md">
+      <nav className="max-w-6xl z-50 mx-auto hidden bg-gradient-to-tr from-secondary via-muted to-secondary sm:flex items-center rounded-full h-[4rem] sticky top-2 px-[2rem] md:px-[5rem] justify-between shadow-md">
         <div className=" flex h-full">
           {links.map((link) => (
             <NavLink
