@@ -15,7 +15,7 @@ export default function Stack() {
       <Heading className="pt-7 pb-16 text-center font-semibold">
         Some of technologies I have worked with
       </Heading>
-      <div className="flex gap-4 flex-wrap justify-center">
+      <div className="flex gap-6 sm:gap-12 flex-wrap justify-center">
         {data.map((d) => (
           <StackCard key={d.name} icon={d.icon} name={d.name} />
         ))}
