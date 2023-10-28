@@ -33,7 +33,12 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <ThemeProvider defaultTheme="dark" attribute={"class"} enableSystem>
+        <ThemeProvider
+          defaultTheme="dark"
+          attribute={"class"}
+          disableTransitionOnChange
+          enableSystem
+        >
           <div className="max-w-screen-2xl mx-auto min-h-[100dvh]">
             <Navbar />
             <Outlet />
@@ -75,7 +80,12 @@ export function ErrorBoundary() {
                 strokeWidth={1}
                 size={200}
               />
-              <Button aria-label="Go to Home page" className="mt-12" size={"lg"} onClick={() => navigate("/")}>
+              <Button
+                aria-label="Go to Home page"
+                className="mt-12"
+                size={"lg"}
+                onClick={() => navigate("/")}
+              >
                 <IconHomeShield className="mr-2 h-4 w-4" /> Go back to safety
               </Button>
             </div>
