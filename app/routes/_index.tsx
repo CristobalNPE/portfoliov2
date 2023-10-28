@@ -61,7 +61,10 @@ export default function Index() {
           Welcome to my website, I'm
         </p>
         <Heading variant={"h0"}>Cristóbal Pulgar Estay</Heading>
-        <Heading className="text-primary" variant={"h0"}>
+        <Heading
+          className="text-transparent bg-clip-text bg-gradient-to-r from-primary/50 via-primary to-primary/50"
+          variant={"h0"}
+        >
           Full Stack Web Developer
         </Heading>
         <div className={"mt-12 flex justify-center gap-3 sm:gap-5"}>
