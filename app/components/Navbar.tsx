@@ -78,6 +78,7 @@ export function Navbar() {
         </div>
         <div className="flex gap-2">
           <Button
+            aria-label="Change Language"
             size={"icon"}
             variant={"link"}
             className="hover:animate-pulse"
