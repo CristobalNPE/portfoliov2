@@ -62,7 +62,7 @@ export default function Index() {
         </p>
         <Heading variant={"h0"}>Cristóbal Pulgar Estay</Heading>
         <Heading
-          className="text-transparent bg-clip-text bg-gradient-to-r from-primary/50 via-primary to-primary/50"
+          className="text-transparent bg-clip-text bg-gradient-to-r from-primary/60 via-primary to-primary/60"
           variant={"h0"}
         >
           Full Stack Web Developer
