@@ -8,3 +8,4 @@ export default {
   // publicPath: "/build/",
   // serverBuildPath: "build/index.js",
 };
+
