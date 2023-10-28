@@ -92,6 +92,7 @@ export function Navbar() {
             size={"icon"}
             variant={"link"}
             className="hover:animate-pulse"
+            onClick={()=>alert("Soon™")}
           >
             <IconLanguage />
           </Button>
