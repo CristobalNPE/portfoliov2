@@ -54,7 +54,7 @@ export default function Index() {
 
   return (
     <main
-      className={`p-5 grid place-items-center h-[calc(100dvh-4rem)] text-center`}
+      className={`animate-in fade-in duration-700  p-5 grid place-items-center h-[calc(100dvh-4rem)] text-center`}
     >
       <div>
         <p className="mb-4 font-thin tracking-wider lg:text-2xl">

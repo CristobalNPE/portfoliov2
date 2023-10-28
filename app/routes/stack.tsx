@@ -11,7 +11,7 @@ export const meta: MetaFunction = () => {
 
 export default function Stack() {
   return (
-    <main className="py-5 px-5 md:px-2  mb-[4rem] sm:mb-0">
+    <main className="animate-in fade-in duration-700 py-5 px-5 md:px-2  mb-[4rem] sm:mb-0">
       <Heading className="pt-7 pb-16 text-center font-semibold">
         Some of technologies I have worked with
       </Heading>
