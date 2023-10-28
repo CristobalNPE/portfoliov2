@@ -10,7 +10,6 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-
 export default function Portfolio() {
   return (
     <main className="animate-in fade-in duration-700 py-5 px-5 md:px-0  mb-[4rem] sm:mb-0">
@@ -22,7 +21,6 @@ export default function Portfolio() {
           <ProjectCard key={d.title} {...d} />
         ))}
       </div>
-      
     </main>
   );
 }
