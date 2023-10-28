@@ -63,7 +63,7 @@ function ProjectCard({
             href={githubLink}
             rel="noreferrer"
             target="_blank"
-            className="flex items-center gap-2 text-lg bg-background py-2 rounded-lg border-2 hover:bg-primary px-8 transition-colors"
+            className="flex items-center gap-2 text-lg bg-background py-2 rounded-lg border-2 hover:bg-primary px-8 transition-colors "
           >
             <IconBrandGithub /> Code
           </a>
@@ -72,7 +72,7 @@ function ProjectCard({
             href={liveLink}
             rel="noreferrer"
             target="_blank"
-            className="flex items-center gap-2 text-lg bg-background py-2 rounded-lg border-2 hover:bg-primary px-8 transition-colors"
+            className="flex items-center gap-2 text-lg bg-background py-2 rounded-lg border-2 hover:bg-primary px-8 transition-colors "
           >
             <IconExternalLink /> Live
           </a>
