@@ -70,6 +70,7 @@ export default function Index() {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <a
+                    aria-label={`Link to ${link.name}`}
                     rel="noreferrer"
                     target="_blank"
                     href={link.to}
