@@ -37,7 +37,12 @@ export function Navbar() {
         {links.map((link) => (
           <NavLink
             key={link.title}
-            className={`text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all`}
+            className={`text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all `}
+            // className={({ isActive }) =>
+            //   isActive
+            //     ? "`text-xl flex gap-3 items-center border-b-4 border-primary h-full px-4 transition-all`"
+            //     : "`text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all`"
+            // }
             to={link.to}
           >
             {link.icon}
@@ -70,6 +75,11 @@ export function Navbar() {
             <NavLink
               key={link.title}
               className={`text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all`}
+            //   className={({ isActive }) =>
+            //   isActive
+            //     ? "`text-xl flex gap-3 items-center border-b-4 border-primary h-full px-4 transition-all`"
+            //     : "`text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all`"
+            // }
               to={link.to}
             >
               {link.icon} {link.title}
