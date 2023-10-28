@@ -48,6 +48,7 @@ export function Navbar() {
           <IconLanguage />
         </Button>
         <Button
+          aria-label="Toggle Dark Mode"
           onClick={
             theme === "dark" ? () => setTheme("light") : () => setTheme("dark")
           }
@@ -85,6 +86,7 @@ export function Navbar() {
           </Button>
 
           <Button
+            aria-label="Toggle Dark Mode"
             onClick={
               theme === "dark"
                 ? () => setTheme("light")
