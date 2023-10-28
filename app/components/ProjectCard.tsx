@@ -59,6 +59,7 @@ function ProjectCard({
 
         <div className="flex justify-between ">
           <a
+            aria-label="Link to Code in Github"
             href={githubLink}
             rel="noreferrer"
             target="_blank"
@@ -67,6 +68,7 @@ function ProjectCard({
             <IconBrandGithub /> Code
           </a>
           <a
+            aria-label="Link to Live webpage"
             href={liveLink}
             rel="noreferrer"
             target="_blank"
