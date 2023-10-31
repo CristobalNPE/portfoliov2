@@ -35,7 +35,7 @@ export const data: PorfolioData[] = [
     shortDescription: "A simple card memorize game",
     description:
     "A well-known memory card game that involves avoiding clicking on the same card twice. One of my initial front-end projects using React, primarily centered around API consumption and state management.",
-    stack: ["React", "Vite", "JavaScript", "TailwindCSS"],
+    stack: ["React", "Remix", "TypeScript", "TailwindCSS"],
     mainImg: PokeMemM,
     logoImg: PokeMemL,
     liveLink: "https://poke-mem-v2.vercel.app/",
