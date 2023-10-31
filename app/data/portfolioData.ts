@@ -38,8 +38,8 @@ export const data: PorfolioData[] = [
     stack: ["React", "Vite", "JavaScript", "TailwindCSS"],
     mainImg: PokeMemM,
     logoImg: PokeMemL,
-    liveLink: "https://effulgent-khapse-4691e8.netlify.app/",
-    githubLink: "https://github.com/CristobalNPE/poke-memorize",
+    liveLink: "https://poke-mem-v2.vercel.app/",
+    githubLink: "https://github.com/CristobalNPE/pokemem-v2",
   },
   {
     title: "Shopper's Choice",
