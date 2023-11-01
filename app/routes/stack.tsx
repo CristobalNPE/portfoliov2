@@ -16,8 +16,8 @@ export default function Stack() {
         Some of technologies I have worked with
       </Heading>
       <div className="flex gap-6 sm:gap-12 flex-wrap justify-center">
-        {data.map((d) => (
-          <StackCard key={d.name} icon={d.icon} name={d.name} />
+        {data.map((d,index) => (
+          <StackCard index={index} key={d.name} icon={d.icon} name={d.name} />
         ))}
       </div>
     </main>
