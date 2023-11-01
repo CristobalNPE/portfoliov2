@@ -30,7 +30,7 @@ function StackCard({ name, icon, index }: Props) {
       }}
       variants={fadeInAnimationVariants}
       initial="initial"
-      whileInView="animate"
+      animate="animate"
       viewport={{
         once: true,
       }}
