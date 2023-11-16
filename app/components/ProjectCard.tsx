@@ -50,7 +50,7 @@ function ProjectCard({
             </p>
           </ScrollArea>
 
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex gap-2 flex-wrap justify-center">
             {stack.map((s) => (
               <Badge key={s}>{s}</Badge>
             ))}

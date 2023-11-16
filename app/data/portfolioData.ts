@@ -1,6 +1,8 @@
 import {
   CvCreatorL,
   CvCreatorM,
+  InvManagerL,
+  InvManagerM,
   PokeMemL,
   PokeMemM,
   ShChoiceL,
@@ -51,5 +53,16 @@ export const data: PorfolioData[] = [
     logoImg: ShChoiceL,
     liveLink: "https://beautiful-paletas-e6ec16.netlify.app/",
     githubLink: "https://github.com/CristobalNPE/shopping-app",
+  },
+  {
+    title: "Inventory Management",
+    shortDescription: "Fullstack inventory application",
+    description:
+      "This application serves as a straightforward solution for inventory management, establishing a connection to a Spring Boot REST API through a React-Remix client. It provides efficient handling of item data and categories, and a clear presentation of pertinent information on the home dashboard.",
+    stack: ["Spring Boot", "Remix", "Java", "TypeScript","Mantine","Docker","PostgreSQL"],
+    mainImg: InvManagerM,
+    logoImg: InvManagerL,
+    liveLink: "https://inventory-app-front-eta.vercel.app",
+    githubLink: "https://github.com/CristobalNPE/inventory-api",
   },
 ];
