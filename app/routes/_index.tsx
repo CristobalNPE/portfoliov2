@@ -48,7 +48,7 @@ export default function Index() {
     {
       name: "Email",
       icon: IconMail,
-      to: "mailto:cristobal.npe@gmail.com?subject=Contact%20from%20website",
+      to: "mailto:contacto@cnpe.dev?subject=Contact%20from%20website",
     },
   ];
 
