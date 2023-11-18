@@ -1,6 +1,15 @@
 import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 import { Badge } from "~/components/ui/badge";
 import { ScrollArea } from "./ui/scroll-area";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./ui/dialog";
 
 type Props = {
   title: string;
@@ -11,6 +20,7 @@ type Props = {
   logoImg: string;
   liveLink: string;
   githubLink: string;
+  hasWarning?: boolean;
 };
 
 function ProjectCard({
@@ -22,6 +32,7 @@ function ProjectCard({
   logoImg,
   liveLink,
   githubLink,
+  hasWarning = false,
 }: Props) {
   return (
     <article className="hover:bg-foreground/10 border-2 w-[21rem] bg-secondary max-h-[40rem] rounded-lg shadow-md hover:shadow-xl  transition-all ">
@@ -67,15 +78,50 @@ function ProjectCard({
           >
             <IconBrandGithub /> Code
           </a>
-          <a
-            aria-label="Link to Live webpage"
-            href={liveLink}
-            rel="noreferrer"
-            target="_blank"
-            className="flex items-center gap-2 text-lg bg-background py-2 rounded-lg border-2 hover:bg-primary px-8 transition-colors "
-          >
-            <IconExternalLink /> Live
-          </a>
+          {!hasWarning ? (
+            <a
+              aria-label="Link to Live webpage"
+              href={liveLink}
+              rel="noreferrer"
+              target="_blank"
+              className="flex items-center gap-2 text-lg bg-background py-2 rounded-lg border-2 hover:bg-primary px-8 transition-colors "
+            >
+              <IconExternalLink /> Live
+            </a>
+          ) : (
+            <Dialog>
+              <DialogTrigger>
+                <button
+                  aria-label="Link to Live webpage"
+                  rel="noreferrer"
+                  className="flex items-center gap-2 text-lg bg-background py-2 rounded-lg border-2 hover:bg-primary px-8 transition-colors "
+                >
+                  <IconExternalLink /> Live
+                </button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Attention!</DialogTitle>
+                  <DialogDescription>
+                    This project is hosted on a slow server, so it may require a
+                    few refreshes to get it working. We apologize for any
+                    inconvenience.
+                  </DialogDescription>
+                </DialogHeader>
+                <DialogFooter>
+                  <a
+                    aria-label="Link to Live webpage"
+                    href={liveLink}
+                    rel="noreferrer"
+                    target="_blank"
+                    className="flex justify-center items-center gap-2 text-lg bg-background py-2 rounded-lg border-2 hover:bg-primary px-8 transition-colors "
+                  >
+                    <IconExternalLink /> Understood!
+                  </a>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
+          )}
         </div>
       </div>
     </article>

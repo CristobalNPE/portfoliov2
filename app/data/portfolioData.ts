@@ -18,6 +18,7 @@ export type PorfolioData = {
   logoImg: string;
   liveLink: string;
   githubLink: string;
+  hasWarning?: boolean;
 };
 
 export const data: PorfolioData[] = [
@@ -36,7 +37,7 @@ export const data: PorfolioData[] = [
     title: "PokeMem",
     shortDescription: "A simple card memorize game",
     description:
-    "A well-known memory card game that involves avoiding clicking on the same card twice. One of my initial front-end projects using React, primarily centered around API consumption and state management.",
+      "A well-known memory card game that involves avoiding clicking on the same card twice. One of my initial front-end projects using React, primarily centered around API consumption and state management.",
     stack: ["React", "Remix", "TypeScript", "TailwindCSS"],
     mainImg: PokeMemM,
     logoImg: PokeMemL,
@@ -59,10 +60,19 @@ export const data: PorfolioData[] = [
     shortDescription: "Fullstack inventory application",
     description:
       "This application serves as a straightforward solution for inventory management, establishing a connection to a Spring Boot REST API through a React-Remix client. It provides efficient handling of item data and categories, and a clear presentation of pertinent information on the home dashboard.",
-    stack: ["Spring Boot", "Remix", "Java", "TypeScript","Mantine","Docker","PostgreSQL"],
+    stack: [
+      "Spring Boot",
+      "Remix",
+      "Java",
+      "TypeScript",
+      "Mantine",
+      "Docker",
+      "PostgreSQL",
+    ],
     mainImg: InvManagerM,
     logoImg: InvManagerL,
     liveLink: "https://inventory-app-front-eta.vercel.app",
     githubLink: "https://github.com/CristobalNPE/inventory-api",
+    hasWarning: true,
   },
 ];
