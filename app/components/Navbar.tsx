@@ -38,18 +38,14 @@ export function Navbar() {
           <NavLink
             key={link.title}
             className={`text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all `}
-            // className={({ isActive }) =>
-            //   isActive
-            //     ? "`text-xl flex gap-3 items-center border-b-4 border-primary h-full px-4 transition-all`"
-            //     : "`text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all`"
-            // }
+            aria-label={`Link to ${link.title}`}
             to={link.to}
           >
             {link.icon}
           </NavLink>
         ))}
 
-        <Button size={"icon"} variant={"link"}>
+        <Button size={"icon"} variant={"link"} aria-label="Switch language">
           <IconLanguage />
         </Button>
         <Button
@@ -75,11 +71,6 @@ export function Navbar() {
             <NavLink
               key={link.title}
               className={`text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all`}
-            //   className={({ isActive }) =>
-            //   isActive
-            //     ? "`text-xl flex gap-3 items-center border-b-4 border-primary h-full px-4 transition-all`"
-            //     : "`text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all`"
-            // }
               to={link.to}
             >
               {link.icon} {link.title}
@@ -92,7 +83,7 @@ export function Navbar() {
             size={"icon"}
             variant={"link"}
             className="hover:animate-pulse"
-            onClick={()=>alert("Soon™")}
+            onClick={() => alert("Soon™")}
           >
             <IconLanguage />
           </Button>
