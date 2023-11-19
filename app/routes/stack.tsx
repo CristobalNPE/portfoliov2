@@ -5,7 +5,10 @@ import { data } from "~/data/stackData";
 export const meta: MetaFunction = () => {
   return [
     { title: "Portfolio - Stack" },
-    { name: "description", content: "Technologies Stack" },
+    {
+      name: "description",
+      content: "Check out some of the technologies I'm familiar with!",
+    },
   ];
 };
 
@@ -16,7 +19,7 @@ export default function Stack() {
         Some technologies I have worked with
       </Heading>
       <div className="flex gap-6 sm:gap-12 flex-wrap justify-center">
-        {data.map((d,index) => (
+        {data.map((d, index) => (
           <StackCard index={index} key={d.name} icon={d.icon} name={d.name} />
         ))}
       </div>
