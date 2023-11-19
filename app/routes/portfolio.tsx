@@ -15,7 +15,7 @@ export const meta: MetaFunction = () => {
 
 export default function Portfolio() {
   return (
-    <main className="animate-in fade-in duration-700 py-5 px-5 md:px-0  mb-[4rem] sm:mb-0">
+    <main className="animate-in fade-in duration-700 py-5 px-2 md:px-0  mb-[4rem] sm:mb-0">
       <Heading className="pt-7 pb-16 font-semibold text-center">
         Some of my projects
       </Heading>

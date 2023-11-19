@@ -35,14 +35,14 @@ function ProjectCard({
   hasWarning = false,
 }: Props) {
   return (
-    <article className="hover:bg-foreground/10 border-2 w-[21rem] bg-secondary max-h-[40rem] rounded-lg shadow-md hover:shadow-xl  transition-all ">
+    <article className="hover:bg-foreground/10 border-2 w-[21rem]  bg-secondary h-[41rem] rounded-lg shadow-md hover:shadow-xl  transition-all shrink-0 ">
       <img
         src={mainImg}
         alt={`Screenshot of the project ${title}`}
         className={"rounded-t-lg aspect-video object-cover w-full h-[12rem] "}
       />
 
-      <div className="p-3 flex flex-col  h-[28rem]">
+      <div className="p-3 flex flex-col  h-[28rem] ">
         <div className="grow">
           <div className="flex gap-2 items-center">
             <img
@@ -55,17 +55,16 @@ function ProjectCard({
               <h3 className="uppercase text-primary text-lg">{title}</h3>
             </div>
           </div>
-          <ScrollArea className="h-[15rem] mb-3">
-            <p className="tracking-wide font-thin leading-6 my-4">
+          <ScrollArea className=" h-[14rem]">
+            <p className="tracking-wide font-thin leading-6 mt-4">
               {description}
             </p>
           </ScrollArea>
-
-          <div className="flex gap-2 flex-wrap justify-center">
-            {stack.map((s) => (
-              <Badge key={s}>{s}</Badge>
-            ))}
-          </div>
+        </div>
+        <div className="flex gap-1 sm:gap-2 flex-wrap justify-center my-6">
+          {stack.map((s) => (
+            <Badge key={s}>{s}</Badge>
+          ))}
         </div>
 
         <div className="flex justify-between ">

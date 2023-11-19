@@ -65,8 +65,6 @@ export const data: PorfolioData[] = [
       "Remix",
       "Java",
       "TypeScript",
-      "Mantine",
-      "Docker",
       "PostgreSQL",
     ],
     mainImg: InvManagerM,
