@@ -18,7 +18,7 @@ import {
 export const meta: MetaFunction = () => {
   return [
     { title: "Portfolio - Cristóbal Pulgar Estay" },
-    { name: "description", content: "Welcome to my Web Portfolio!" },
+    { name: "description", content: "Take a look at my Web Portfolio!" },
   ];
 };
 
