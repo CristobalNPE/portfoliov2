@@ -6,7 +6,10 @@ import { data } from "~/data/portfolioData";
 export const meta: MetaFunction = () => {
   return [
     { title: "Portfolio - Projects" },
-    { name: "description", content: "Portfolio Projects" },
+    {
+      name: "description",
+      content: "Take a look at some of the projects I've done while learning!",
+    },
   ];
 };
 
