@@ -104,7 +104,7 @@ function ProjectCard({
                   <DialogTitle>Attention!</DialogTitle>
                   <DialogDescription>
                     This project is hosted on a slow server, so it may require a
-                    few refreshes to get it working. We apologize for any
+                    few refreshes to get it working. I apologize for any
                     inconvenience.
                   </DialogDescription>
                 </DialogHeader>
