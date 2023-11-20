@@ -79,7 +79,7 @@ export const data: StackData[] = [
     icon: Express,
   },
   {
-    name: "IntelliJ",
+    name: "IntelliJ IDEA",
     icon: IntelliJ,
   },
   {
