@@ -9,6 +9,7 @@ import {
   IconStack2,
   IconSunFilled,
 } from "@tabler/icons-react";
+import { cn } from "~/lib/utils";
 
 export function Navbar() {
   const { setTheme, theme } = useTheme();
@@ -37,7 +38,12 @@ export function Navbar() {
         {links.map((link) => (
           <NavLink
             key={link.title}
-            className={`text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all `}
+            className={({ isActive }) =>
+              cn(
+                `text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all `,
+                isActive && "border-primary border-b-4"
+              )
+            }
             aria-label={`Link to ${link.title}`}
             to={link.to}
           >
@@ -70,7 +76,12 @@ export function Navbar() {
           {links.map((link) => (
             <NavLink
               key={link.title}
-              className={`text-xl flex gap-3 items-center hover:border-b-4 border-primary h-full px-4 transition-all`}
+              className={({ isActive }) =>
+                cn(
+                  `text-xl flex gap-3 items-center hover:border-b-4 border-primary/50 h-full px-4 transition-all`,
+                  isActive && "border-primary border-b-4"
+                )
+              }
               to={link.to}
             >
               {link.icon} {link.title}
