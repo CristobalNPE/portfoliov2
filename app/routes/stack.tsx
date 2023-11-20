@@ -15,8 +15,8 @@ export const meta: MetaFunction = () => {
 export default function Stack() {
   return (
     <main className="animate-in fade-in duration-700 py-5 px-5 md:px-2  mb-[4rem] sm:mb-0">
-      <Heading className="pt-7 pb-16 text-center font-semibold">
-        Some technologies I have worked with
+      <Heading className="pt-7 pb-16 text-center font-semibold text-foreground/70">
+        Technologies I have worked with
       </Heading>
       <div className="flex gap-6 sm:gap-12 flex-wrap justify-center">
         {data.map((d, index) => (
